@@ -32,3 +32,7 @@ def about(request):
 def days_index(request):
   days = Day.objects.all()
   return render(request, 'days/index.html', {'days': days })
+
+def days_detail(request, day_id):
+  day = Day.objects.get(id=day_id)
+  return render(request, 'days/detail.html', {'day':day})

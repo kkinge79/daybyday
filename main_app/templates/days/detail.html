@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block head %}
+<link 
+  rel="stylesheet" 
+  type="text/css" 
+  href="{% static 'css/day-detail.css' %}"
+/>
+{% endblock %}
+
+{% block content %}
+
+<section class="day-container">
+  <div class="day-details">
+    <h2>Rated: {{ day.rate }}</h2>
+    <h2>mood for the day: {{ day.mood }}</h2>
+    <h2>Highs: {{day.highs }}</h2>
+    <h2>Lows: {{day.lows }}</h2>
+    <p>Any notes to add?: {{ day.notes }}</p>
+  </div>
+</section>
+
+{% endblock %}
