@@ -14,4 +14,8 @@ urlpatterns = [
   path('days/', views.days_index, name="days_index"),
 
   path('days/<int:day_id>/', views.days_detail, name='days_detail'),
+
+  path('days/create/', views.DayCreate.as_view(), name='days_create'),
+
+  
 ]

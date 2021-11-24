@@ -1,5 +1,7 @@
 from django.shortcuts import render
 
+from django.views.generic.edit import CreateView
+
 from django.http import HttpResponse
 
 from .models import Day
@@ -19,3 +21,7 @@ def days_index(request):
 def days_detail(request, day_id):
   day = Day.objects.get(id=day_id)
   return render(request, 'days/detail.html', {'day':day})
+
+class DayCreate(CreateView):
+  model = Day
+  fields = "__all__"
