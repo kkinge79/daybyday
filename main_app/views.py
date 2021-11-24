@@ -1,6 +1,7 @@
+from django.db.models import fields
 from django.shortcuts import render
 
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 
 from django.http import HttpResponse
 
@@ -25,3 +26,11 @@ def days_detail(request, day_id):
 class DayCreate(CreateView):
   model = Day
   fields = "__all__"
+
+class DayUpdate(UpdateView):
+  model = Day
+  fields = ['rating', 'mood', 'highs', 'lows', 'notes']
+
+class DayDelete(DeleteView):
+  model = Day
+  success_url = '/days/'

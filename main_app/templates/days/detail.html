@@ -13,6 +13,10 @@
     <h2>Highs: {{day.highs }}</h2>
     <h2>Lows: {{day.lows }}</h2>
     <p>Any notes to add?: {{ day.notes }}</p>
+    <div class="cat-actions">
+      <a href="{% url 'days_update' day.id %}">Edit</a>
+      <a href="{% url 'days_delete' day.id %}" >Delete</a>
+    </div>
   </div>
 </section>
 
