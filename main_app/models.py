@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models.fields import DateField
 
 from django.urls import reverse
 # Create your models here.
@@ -14,3 +15,4 @@ class Day(models.Model):
 
   def get_absolute_url(self):
     return reverse('days_detail', kwargs={'day_id': self.id})
+

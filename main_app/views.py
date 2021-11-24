@@ -1,4 +1,5 @@
 from django.db.models import fields
+
 from django.shortcuts import render
 
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
@@ -6,6 +7,8 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.http import HttpResponse
 
 from .models import Day
+
+
 
 
 def home(request):
