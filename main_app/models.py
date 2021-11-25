@@ -6,7 +6,7 @@ MOOD = (
   ('G', '😊'),
   ('N', '😐'),
   ('B', '😢'),
-  ('A', '😡')
+  ('A', '😡'),
 )
 
 class Day(models.Model):
@@ -15,9 +15,6 @@ class Day(models.Model):
   highs = models.CharField(max_length=100)
   lows = models.CharField(max_length=100)
   notes = models.TextField(max_length=1000)
-
-  def __str__(self):
-      return self.name
 
   def get_absolute_url(self):
     return reverse('days_detail', kwargs={'day_id': self.id})

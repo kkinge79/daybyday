@@ -1,8 +1,8 @@
-from django.db.models import fields
+
 
 from django.shortcuts import render, redirect
 
-from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from django.views.generic.edit import CreateView, DeleteView
 
 from django.http import HttpResponse
 
