@@ -22,4 +22,6 @@ urlpatterns = [
 
   path('days/<int:day_id>/add_dating/', views.add_dating, name='add_dating'),
 
+  path ('accounts/signup/', views.signup, name='signup'),
+
 ]
