@@ -17,7 +17,6 @@ urlpatterns = [
 
   path('days/create/', views.DayCreate.as_view(), name='days_create'),
 
-  path('days/<int:pk>/update/', views.DayUpdate.as_view(), name="days_update"),
-
   path('days/<int:pk>/delete/', views.DayDelete.as_view(), name="days_delete"),
+
 ]

@@ -1,5 +1,4 @@
 from django.db import models
-from django.db.models.fields import DateField
 
 from django.urls import reverse
 # Create your models here.
@@ -8,7 +7,7 @@ class Day(models.Model):
   mood = models.CharField(max_length=100)
   highs = models.CharField(max_length=100)
   lows = models.CharField(max_length=100)
-  notes = models.CharField(max_length=1000)
+  notes = models.TextField(max_length=1000)
 
   def __str__(self):
       return self.name
