@@ -15,7 +15,7 @@ class Migration(migrations.Migration):
             name='Day',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('rating', models.models.IntegerField()),
+                ('rating', models.IntegerField()),
                 ('mood', models.CharField(max_length=100)),
                 ('highs', models.CharField(max_length=100)),
                 ('lows', models.CharField(max_length=100)),
