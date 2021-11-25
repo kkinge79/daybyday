@@ -2,7 +2,25 @@
 {% load static %}
 
 {% block content %}
-
+<div class="date-mood-container">
+  <section class="Date">
+    <div class="subsection-title">
+      <h2>Date</h2>
+    </div>
+    <table>
+      <thead>
+        <tr><th>Date</th><th>Mood emoji</th></tr>
+      </thead>
+      <tbody> {% for dating in day.dating_set.all %}
+          <tr>
+            <td>{{dating.date}}</td>
+            <td>{{dating.get_mood_display}}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+</div>
 <section class="day-container">
   <div class="day-details">
     <h2>Rating {{day.rating}}</h2>
