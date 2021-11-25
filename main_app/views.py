@@ -1,4 +1,5 @@
 from django.contrib.auth.models import User
+
 from django.shortcuts import render, redirect
 
 from django.views.generic.edit import CreateView, DeleteView
@@ -15,23 +16,36 @@ from django.contrib.auth import login
 
 from django.contrib.auth.forms import UserCreationForm
 
+from django.contrib.auth.mixins import LoginRequiredMixin
+
+from django.contrib.auth.decorators import login_required
+
+
+
+
 class Home(LoginView):
   template_name = 'home.html'
+
 
 def about(request):
   return render(request, 'about.html')
 
 
+@login_required
 def days_index(request):
-  days = Day.objects.all()
+  days = Day.objects.filter(user=request.user)
   return render(request, 'days/index.html', {'days': days })
 
+
+@login_required
 def days_detail(request, day_id):
   day = Day.objects.get(id=day_id)
   dating_form = DatingForm()
   return render(request, 'days/detail.html', {'day':day, 'dating_form': dating_form})
 
-class DayCreate(CreateView):
+
+
+class DayCreate(LoginRequiredMixin, CreateView):
   model = Day
   fields = "__all__"
   
@@ -39,10 +53,14 @@ class DayCreate(CreateView):
     form.instance.user = self.request.user
     return super().form_valid(form)
 
-class DayDelete(DeleteView):
+
+
+class DayDelete(LoginRequiredMixin, DeleteView):
   model = Day
   success_url = '/days/'
 
+
+@login_required
 def add_dating(request, day_id):
   form = DatingForm(request.POST)
   if form.is_valid():
