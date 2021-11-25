@@ -22,8 +22,8 @@ def days_index(request):
 
 def days_detail(request, day_id):
   day = Day.objects.get(id=day_id)
-  dating_from = DatingForm()
-  return render(request, 'days/detail.html', {'day':day, 'dating_form': dating_from})
+  dating_form = DatingForm()
+  return render(request, 'days/detail.html', {'day':day, 'dating_form': dating_form})
 
 class DayCreate(CreateView):
   model = Day
@@ -32,3 +32,11 @@ class DayCreate(CreateView):
 class DayDelete(DeleteView):
   model = Day
   success_url = '/days/'
+
+def add_dating(request, day_id):
+  form = DatingForm(request.POST)
+  if form.is_valid():
+    new_dating = form.save(commit=False)
+    new_dating.day_id = day_id
+    new_dating.save()
+  return redirect('days_detail', day_id=day_id)

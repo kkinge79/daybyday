@@ -20,10 +20,13 @@ class Day(models.Model):
     return reverse('days_detail', kwargs={'day_id': self.id})
 
 class Dating(models.Model):
-  date = models.DateField('Dating date')
+  date = models.DateField('Date')
   mood = models.CharField(max_length=1, choices= MOOD, default=MOOD[0][0])
 
   day = models.ForeignKey(Day, on_delete=models.CASCADE)
 
   def __str__(self):
       return f"{self.get_mood_display()} on {self.date}"
+    
+  class Meta:
+    ordering = ['-date']

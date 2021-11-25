@@ -1,12 +1,40 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block head %}
+<link 
+  href="https://cdn.jsdelivr.net/npm/mc-datepicker/dist/mc-calendar.min.css" 
+  rel="stylesheet" 
+/>
+<link rel="stylesheet" href="{% static 'css/mcdp.css' %}">
+<script 
+  src="https://cdn.jsdelivr.net/npm/mc-datepicker/dist/mc-calendar.min.js"
+>
+</script>
+{% comment %} <link 
+  rel="stylesheet" 
+  type="text/css" 
+  href="{% static 'css/cat-detail.css' %}"
+/> {% endcomment %}
+<script defer src="{% static 'js/day-detail.js' %}"></script>
+{% endblock %}
+
 {% block content %}
 <div class="date-mood-container">
   <section class="Date">
     <div class="subsection-title">
       <h2>Date</h2>
     </div>
+    <h3>Add a Date</h3>
+    <form
+      action="{% url 'add_dating' day.id %}" 
+      method="post" 
+      class="subsection-content"
+    >
+      {% csrf_token %}
+      {{ dating_form.as_p }}
+      <button type="submit" class="btn submit">Add Date</button>
+    </form>
     <table>
       <thead>
         <tr><th>Date</th><th>Mood emoji</th></tr>
@@ -21,6 +49,7 @@
     </table>
   </section>
 </div>
+
 <section class="day-container">
   <div class="day-details">
     <h2>Rating {{day.rating}}</h2>
