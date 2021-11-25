@@ -17,10 +17,15 @@
     <div class="collapse" id="navbarToggleExternalContent">
       <div class="bg-dark p-4">
         <h5 class="text-white h4">DaybyDay</h5>
-          <span class="text-muted"><a href="/">Home</a></span>
-          <span class="text-muted"><a href="/about">About</a></span>
-          <span class="text-muted"><a href="/days">All Days</a></span>
+        {% if user.is_authenticated %}
+          <span class="text-muted"><a href="{% url 'days_index' %}">All Days</a></span>
           <span class="text-muted"><a href="{% url 'days_create' %}">Add new day</a></span>
+          <span class="text-muted"><a href="{% url 'about' %}">About</a></span>
+          <span class="text-muted"><a href="{% url 'logout' %}">Logout</a></span>
+        {% else %}
+          <span class="text-muted"><a href="{% url 'about' %}">About</a></span>
+          <span class="text-muted"><a href="{% url 'home' %}">Home</a></span>
+        {% endif %}
       </div>
     </div>
     <nav class="navbar navbar-dark bg-dark">
