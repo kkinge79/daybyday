@@ -1,5 +1,3 @@
-
-
 from django.shortcuts import render, redirect
 
 from django.views.generic.edit import CreateView, DeleteView
@@ -8,7 +6,7 @@ from django.http import HttpResponse
 
 from .models import Day
 
-
+from .forms import DatingForm
 
 
 def home(request):
@@ -24,7 +22,8 @@ def days_index(request):
 
 def days_detail(request, day_id):
   day = Day.objects.get(id=day_id)
-  return render(request, 'days/detail.html', {'day':day})
+  dating_from = DatingForm()
+  return render(request, 'days/detail.html', {'day':day, 'dating_form': dating_from})
 
 class DayCreate(CreateView):
   model = Day
