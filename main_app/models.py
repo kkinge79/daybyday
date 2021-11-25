@@ -3,6 +3,8 @@ from django.db import models
 from django.urls import reverse
 
 from django.contrib.auth.models import User
+
+from django.core.validators import MinValueValidator, MaxValueValidator
 # Create your models here.
 MOOD = (
   ('G', '😊'),
@@ -12,7 +14,7 @@ MOOD = (
 )
 
 class Day(models.Model):
-  rating = models.IntegerField()
+  rating = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(10)])
   mood = models.CharField(max_length=100)
   highs = models.CharField(max_length=100)
   lows = models.CharField(max_length=100)
