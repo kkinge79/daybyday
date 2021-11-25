@@ -24,6 +24,7 @@
   <section class="Date">
     <div class="subsection-title">
     </div>
+
     <h3>Add a Date</h3>
     <form
       action="{% url 'add_dating' day.id %}" 
@@ -34,6 +35,7 @@
       {{ dating_form.as_p }}
       <button type="submit" class="btn submit">Add Date</button>
     </form>
+
     <table>
       <thead>
         <tr><th>Date</th><th>Mood emoji</th></tr>
@@ -51,7 +53,7 @@
 
 <section class="day-container">
   <div class="day-details">
-    <h2>Rating {{day.rating}}</h2>
+    <h2>Rating: {{day.rating}}</h2>
     <h2>Mood for the day: {{ day.mood }}</h2>
     <h2>Highs: {{day.highs }}</h2>
     <h2>Lows: {{day.lows }}</h2>

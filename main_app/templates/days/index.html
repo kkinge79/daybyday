@@ -13,6 +13,7 @@
 
 <section class="card-container">
   {% for day in days %} 
+{% for dating in day.dating_set.all %}
   <a href="{% url 'days_detail' day.id %}">
     <div class="card" style="width: 18rem;">
   <div class="card-body">
@@ -21,6 +22,7 @@
   </div>
   </a>
 </div>
+  {% endfor %}
   {% endfor %}
 </section>
 {% endblock %}
