@@ -1,4 +1,11 @@
 {%  extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
+{% endblock %}
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +18,12 @@
 <body>
 {% block content %}
   <h1>What is DaybyDay?</h1>
-  <p>{% lorem 4 b random %}
+  <p>DayByDay is a life tracking app. Take a couple minutes out of your life a day to input how your day went. What were the highlights of your day? what were some low points? Rate your day 1-10. Tracking how you do on a daily basis is the first step to help you being a better you. Reflect on your past days and see what made you happy, or what made you sad. Hope you enjoy! more updates to come!</p>
+  <p class="follow">Follow on social media</p>
+  <span><a href="#" class="fa fa-facebook"></a></span>
+  <span><a href="#" class="fa fa-twitter"></a></span>
+    <span><a href="#" class="fa fa-instagram"></a></span>
+    <p class="comingsoon">social media coming soon</p>
 {% endblock %}
 </body>
 </html>
