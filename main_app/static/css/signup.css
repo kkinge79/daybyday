@@ -1,0 +1,26 @@
+th {
+  vertical-align: text-top;
+}
+
+#signup {
+  font-size: 40px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+button.btn.btn-dark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.form-container {
+  padding-left: 10px;
+}
