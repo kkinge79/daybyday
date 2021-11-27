@@ -2,28 +2,28 @@
 {% load static %}
 
 {% block head %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/day-index.css' %}"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
 {% endblock %}
 
 
 {% block content %}
 <section class="page-header">
-  <h1>Days</h1>
+  <h1 class="title">Days</h1>
 </section>
 
 <section class="card-container">
-  {% for day in days %} 
-{% for dating in day.dating_set.all %}
+{% for day in days %} 
+{% comment %} {% for dating in day.dating_set.all %} {% endcomment %}
   <a href="{% url 'days_detail' day.id %}">
     <div class="card" style="width: 18rem;">
   <div class="card-body">
-    <h5 class="card-title">Date: {{dating.date}}</h5>
-    <h6 class="card-subtitle mb-2 text-muted">rating:{{day.rating}}</h6>
+    <h5 class="card-title">(date goes here){{dating.date}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{day.rating}}<span id="outoften">/10</span></h6>
   </div>
   </a>
 </div>
   {% endfor %}
-  {% endfor %}
+  {% comment %} {% endfor %} {% endcomment %}
 </section>
 {% endblock %}
 
