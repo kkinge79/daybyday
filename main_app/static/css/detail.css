@@ -1,3 +1,8 @@
+body {
+  height: 100vh;
+  background-image: url("../images/wallpaper.jpg");
+}
+
 .date {
   text-align: center;
   margin: 20px;
@@ -14,11 +19,22 @@
   text-align: left;
   align-items: center;
   font-family: 'Signika', sans-serif;
+  margin: auto;
+}
+
+section.day-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  width: 40%;
 }
 
 div.day-details {
   margin-top: 40px;
   text-align: left;
+
 }
 
 section.Date {
@@ -31,7 +47,7 @@ a.btn.btn-dark {
   align-items: center;
   text-align: center;
   margin-top: 40px;
-  width: 75%;
+  width: 45%;
 }
 
 div.day-actions {
@@ -43,6 +59,7 @@ div.day-actions {
 
 p{
   font-size: 18px;
+  color: white;
 }
 
 button.btn.btn-light.submit {
@@ -50,7 +67,6 @@ button.btn.btn-light.submit {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: auto;
 }
 
 form.subsection-content {
@@ -75,6 +91,10 @@ td, th {
   padding: 0 50px;
 }
 
+th {
+  color: white;
+}
+
 td.datepost {
   font-size: 26px;
 }
@@ -85,6 +105,7 @@ td.emoji {
 
 .item {
   font-size: 32px;
+  color: black;
 }
 
 @media only screen and(max-width: 375px){
@@ -93,4 +114,11 @@ button.btn.btn-light.submit {
   margin: 0;
 }
 
+section.day-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
 }
