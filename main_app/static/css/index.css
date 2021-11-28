@@ -3,8 +3,11 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 20px;
+  margin: 20px; 
   font-size: 35px;
+  font-family: 'Cedarville Cursive', cursive;
+  font-weight: 900;
+  font-size: 60px;
 }
 
 section.card-container {
@@ -46,6 +49,7 @@ h5.card-title {
 #outoften {
 font-size: 12px;
 }
+
 
 @media only screen and(max-width: 375px){
 div.card {

@@ -1,8 +1,13 @@
-h1 {
+
+
+#whatis {
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
+  font-family: 'Cedarville Cursive', cursive;
+  font-weight:bolder;
+  font-size: 60px;
 }
 
 #whatis {

@@ -1,4 +1,10 @@
-
+h1#add {
+text-align: center;
+margin: 15px;
+font-family: 'Cedarville Cursive', cursive;
+font-size: 60px;
+font-weight: 900;
+}
 
 form.form-container {
   display: flex;
@@ -33,10 +39,11 @@ label {
 }
 
 button.btn.btn-light.submit {
+  margin-top: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin-top: 40px;
-  width: 75%;
+  width: 25%;
 }
