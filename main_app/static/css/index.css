@@ -18,7 +18,8 @@ html, body {
 section.card-container {
   display: flex;
   flex-flow: row wrap;
-  align-items:flex-start;
+  align-items:center;
+  justify-content: center;
   font-family: 'Signika', sans-serif;
 }
 
@@ -40,6 +41,7 @@ div.card {
   margin: auto;
   margin-bottom: 22px;
   width: 260px !important;
+  margin: 15px 15px !important;
 }
 
 div.card-body {
