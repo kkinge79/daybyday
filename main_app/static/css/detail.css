@@ -71,7 +71,14 @@ td, th {
   padding: 0 50px;
 }
 
-span {
+.item {
   font-size: 32px;
 }
 
+@media only screen and(max-width: 375px){
+
+button.btn.btn-light.submit {
+  margin: 0;
+}
+
+}

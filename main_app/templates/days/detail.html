@@ -40,11 +40,11 @@
 
 <section class="day-container">
   <div class="day-details">
-    <p>Rating: <span>{{day.rating}}</span></p>
-    <p>Mood for the day: <span>{{ day.mood }}</span></p>
-    <p>Highs: <span>{{day.highs }}</span></p>
-    <p>Lows: <span>{{day.lows }}</span></p>
-    <p>Any notes to add: <span>{{ day.notes }}</span></p>
+    <p>Rating: <span class="item">{{day.rating}}</span></p>
+    <p>Mood for the day: <span class="item">{{ day.mood }}</span></p>
+    <p>Highs: <span class="item">{{day.highs }}</span></p>
+    <p>Lows: <span class="item">{{day.lows }}</span></p>
+    <p>Any notes to add: <span class="item">{{ day.notes }}</span></p>
     <div class="day-actions">
       <a href="{% url 'days_delete' day.id %}" class="btn btn-dark">Delete</a>
     </div>
