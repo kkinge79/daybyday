@@ -1,0 +1,42 @@
+
+
+form.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+label {
+  margin-left: 10px;
+}
+
+#id_rating{
+  margin: 10px;
+}
+#id_mood {
+  margin: 10px;
+}
+#id_highs {
+  margin: 10px;
+}
+#id_lows {
+  margin: 10px;
+}
+#id_notes {
+  margin: 10px;
+  width: 275px;
+}
+#id_user {
+  margin: 10px;
+}
+
+button.btn.btn-light.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+  width: 75%;
+}

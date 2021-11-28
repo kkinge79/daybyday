@@ -71,6 +71,14 @@ td, th {
   padding: 0 50px;
 }
 
+td.datepost {
+  font-size: 26px;
+}
+
+td.emoji {
+  font-size: 26px;
+}
+
 .item {
   font-size: 32px;
 }

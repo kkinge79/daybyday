@@ -29,7 +29,7 @@
       </thead>
       <tbody> {% for dating in day.dating_set.all %}
           <tr>
-            <td>{{dating.date}}</td>
+            <td class="datepost">{{dating.date}}</td>
             <td class="emoji">{{dating.get_mood_display}}</td>
           </tr>
         {% endfor %}
