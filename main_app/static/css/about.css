@@ -1,4 +1,7 @@
-
+body {
+  height: 100vh;
+  background-image: url("../images/wallpaper.jpg");
+}
 
 #whatis {
   display: flex;
@@ -16,6 +19,7 @@
 
 p {
   margin: 15px;
+  font-family: 'Signika', sans-serif;
 }
 
 .fa {
@@ -31,6 +35,7 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-family: 'Signika', sans-serif;
 }
 
 .fa:hover {
