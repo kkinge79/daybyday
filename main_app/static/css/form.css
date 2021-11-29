@@ -22,6 +22,9 @@ label {
   margin-left: 10px;
 }
 
+#id_date{
+  margin: 10px;
+}
 #id_rating{
   margin: 10px;
 }
