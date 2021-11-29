@@ -1,1 +1,1 @@
-web: gunicorn daybydaykagan.wsgi
+web: gunicorn daybyday.wsgi
