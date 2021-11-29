@@ -18,33 +18,33 @@
 
 {% block content %}
 <div class="content">
-<div class="date-mood-container">
+{% comment %} <div class="date-mood-container">
   <section class="Date">
     <div class="subsection-title">
     </div>
     <h3 class="date">Details</h3>
-    <form action="{% url 'add_dating' day.id %}" method="post" class="subsection-content">
+    <form action="{% url 'add_mood' day.id %}" method="post" class="subsection-content">
       {% csrf_token %}
-      {{ dating_form.as_p }}
+      {{ mood_form.as_p }}
       <button type="submit" class="btn btn-light submit">Add Date</button>
     </form>
     <table>
       <thead>
         <tr><th>Date</th><th class="emoji">Mood emoji</th></tr>
       </thead>
-      <tbody> {% for dating in day.dating_set.all %}
+      <tbody> {% for mood in day.mood_set.all %}
           <tr>
-            <td class="datepost">{{dating.date}}</td>
-            <td class="emoji">{{dating.get_mood_display}}</td>
+            <td class="emoji">{{mood.get_mood_display}}</td>
           </tr>
         {% endfor %}
       </tbody>
     </table>
-  </section>
-</div>
+  </section> {% endcomment %}
+{% comment %} </div> {% endcomment %}
 
 <section class="day-container">
   <div class="day-details">
+    <p>Date: <span class="item">{{day.date}}</span></p>
     <p>Rating: <span class="item">{{day.rating}}</span></p>
     <p>Mood for the day: <span class="item">{{ day.mood }}</span></p>
     <p>Highs: <span class="item">{{day.highs }}</span></p>
@@ -54,7 +54,7 @@
       <a href="{% url 'days_delete' day.id %}" class="btn btn-dark">Delete</a>
     </div>
   </div>
-  </div>
 </section>
+</div>
 
 {% endblock %}

@@ -18,16 +18,14 @@
 
 <section class="card-container">
 {% for day in days %} 
-  {% for dating in day.dating_set.all %}
   <a href="{% url 'days_detail' day.id %}">
     <div class="card" style="width: 18rem;">
   <div class="card-body">
-    <h5 class="card-title">{{dating.date}}</h5>
+    {% comment %} <h5 class="card-title">{{day.date}}</h5> {% endcomment %}
     <h6  class="card-subtitle mb-2 text-muted">{{day.rating}}<span id="outoften">/7</span></h6>
   </div>
   </a>
 </div>
-  {% endfor %}
 {% endfor %}
 </section>
 {% endblock %}

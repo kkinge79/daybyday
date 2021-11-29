@@ -8,8 +8,6 @@ from django.http import HttpResponse
 
 from .models import Day
 
-from .forms import DatingForm
-
 from django.contrib.auth.views import LoginView
 
 from django.contrib.auth import login
@@ -34,20 +32,19 @@ def about(request):
 @login_required
 def days_index(request):
   days = Day.objects.filter(user=request.user)
-  return render(request, 'days/index.html', {'days': days })
+  return render(request, 'days/index.html', {'days': days})
 
 
 @login_required
 def days_detail(request, day_id):
   day = Day.objects.get(id=day_id)
-  dating_form = DatingForm()
-  return render(request, 'days/detail.html', {'day':day, 'dating_form': dating_form})
+  return render(request, 'days/detail.html', {'day':day})
 
 
 
 class DayCreate(LoginRequiredMixin, CreateView):
   model = Day
-  fields = ['rating','mood', 'highs', 'lows', 'notes']
+  fields = ['date','rating','mood', 'highs', 'lows', 'notes']
   
   def form_valid(self, form):
     form.instance.user = self.request.user
@@ -58,17 +55,6 @@ class DayCreate(LoginRequiredMixin, CreateView):
 class DayDelete(LoginRequiredMixin, DeleteView):
   model = Day
   success_url = '/days/'
-
-
-@login_required
-def add_dating(request, day_id):
-  form = DatingForm(request.POST)
-  if form.is_valid():
-    new_dating = form.save(commit=False)
-    new_dating.day_id = day_id
-    new_dating.save()
-  return redirect('days_detail', day_id=day_id)
-
 
 def signup(request):
   error_message = ''
