@@ -24,5 +24,5 @@ class Day(models.Model):
     return reverse('days_detail', kwargs={'day_id': self.id})
 
   class Meta:
-    ordering = ['-date']
+    ordering = ['date']
 
