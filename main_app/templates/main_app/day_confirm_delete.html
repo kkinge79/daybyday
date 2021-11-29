@@ -1,21 +1,21 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block content %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/delete.css' %}">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+{% endblock %}
 
+
+{% block content %}
 <div class="page-header">
-  <h1>Delete Day?</h1>
+  <h1 class="title">Delete Day?</h1>
 </div>
 <h2>Are you sure you want to delete this day?</h2>
 <form action="" method="POST" class="form">
   {% csrf_token %}
-  <a 
-    href="{% url 'days_detail' day.id %}" 
-    class="btn secondary"
-  >
-    Cancel
-  </a>
-  <button type="submit">Yes - Delete!</button>
+  <a href="{% url 'days_detail' day.id %}" class="btn btn-light secondary">Cancel</a>
+  <button type="submit" class="btn btn-dark">Yes - Delete!</button>
 </form>
 
 {% endblock %}
