@@ -14,7 +14,7 @@ MOOD = (
 )
 
 class Day(models.Model):
-  rating = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(10)])
+  rating = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(7)])
   mood = models.CharField(max_length=100)
   highs = models.CharField(max_length=100)
   lows = models.CharField(max_length=100)

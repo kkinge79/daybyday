@@ -47,7 +47,7 @@ def days_detail(request, day_id):
 
 class DayCreate(LoginRequiredMixin, CreateView):
   model = Day
-  fields = "__all__"
+  fields = ['rating','mood', 'highs', 'lows', 'notes']
   
   def form_valid(self, form):
     form.instance.user = self.request.user

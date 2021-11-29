@@ -67,6 +67,7 @@ button.btn.btn-light.submit {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: auto;
 }
 
 form.subsection-content {
