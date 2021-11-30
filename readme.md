@@ -4,7 +4,7 @@
 <br><br>
 
 <h2>Getting Started</h2>
-<a href="#">DayByDay</a>
+<a href="https://daybydaykagan.herokuapp.com/">DayByDay</a>
 <p>DayByDay is your personal daily life tracker. Log in daily to track how your day went. You start by rating the day over all follwed by what you would say was your mood for the day. What was the higlights of you day? What about the lows parts? also you can add any additional notes if youd like.
 <br><br>
 <p>The purpose of this app is for the user to be able to reflect back on their days if they ever need to. On the main dashboard you are greeted with all of your days and, depending how you rated it, that day will be highlighted with green, yellow, or red. You can view your dashboard and notice a lot of red days, then maybe thats a sign to try and change your life around to make it better. Also the exact opposite; lets say youve been having a ton of great days and you happen to have a bad day, you can reflect back on those good days to try and make your day a little better</p>
@@ -26,7 +26,7 @@
 <img src="../daybyday/main_app/static/images/new.png">
 <br>
 <h3>All Days</h3>
-<img src="#">
+<img src="../daybyday/main_app/static/images/alldays.png">
 <br>
 <h3>WireFrame</h3>
 <img src="../daybyday/main_app/static/images/wireframe.png">

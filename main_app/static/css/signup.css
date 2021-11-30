@@ -39,3 +39,7 @@ button.btn.btn-dark {
   align-items: center;
   text-align: left;
 }
+
+p.red-text {
+  visibility: hidden !important;
+}
