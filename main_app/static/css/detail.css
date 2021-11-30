@@ -13,11 +13,6 @@ body {
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-  align-items: center;
   font-family: 'Signika', sans-serif;
   margin: auto;
 }
@@ -27,15 +22,15 @@ section.day-container {
   flex-wrap: wrap;
   align-items: left;
   text-align: left;
-  width: 100%;
+  margin: auto;
 }
 
 div.day-details {
   margin-top: 40px;
   text-align: left;
   word-break:break-all;
-  padding: 10px;
-
+  margin: 0px !important;
+  padding-left: 10px;
 }
 
 section.Date {
@@ -48,7 +43,8 @@ a.btn.btn-dark {
   align-items: center;
   text-align: center;
   margin-top: 40px;
-  width: 35%;
+  margin: auto;
+  width: 120px;
 }
 
 div.day-actions {
