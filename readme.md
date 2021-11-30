@@ -66,6 +66,8 @@
   <br><br>
 
 <h1>Credit</h1>
+<a href="https://icon-icons.com/icon/feather-pen/64932">Favicon</a>
+<br>
 <a href="https://cdnjs.cloudflare.com">Social media Icons</a>
 <br>
 <a href="https://wallpaperaccess.com/ombre-desktop">Background image</a>
