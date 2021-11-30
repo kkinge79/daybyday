@@ -29,3 +29,7 @@ form.login {
   text-align: center;
   font-family: 'Signika', sans-serif;
 }
+
+button.btn.btn-light {
+  margin-bottom: 10px;
+}
