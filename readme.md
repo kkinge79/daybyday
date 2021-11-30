@@ -56,7 +56,7 @@
         <li>either have a calendar that takes up most of the webpage or
         input the day you want to see and hit enter and itll bring you to that page or say "sorry you have nothing on that day"</li>
       </ul>
-    <li>AAU i want to be able to add more information about my day/li>
+    <li>AAU i want to be able to add more information about my day</li>
       <ul>
         <li>more ways to add information about the users day to have a more in depth feel</li>
       </ul>
@@ -66,8 +66,6 @@
   <br><br>
 
 <h1>Credit</h1>
-<a href="https://icon-icons.com/icon/feather-pen/64932">Favicon</a>
-<br>
 <a href="https://cdnjs.cloudflare.com">Social media Icons</a>
 <br>
 <a href="https://wallpaperaccess.com/ombre-desktop">Background image</a>
