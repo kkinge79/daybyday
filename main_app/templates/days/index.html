@@ -6,8 +6,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Karla:wght@519&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
-  <script defer src="{% static 'js/index-detail.js' %}"></script>
   <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+  <script defer src="{% static 'js/index-detail.js' %}"></script>
 {% endblock %}
 
 
@@ -19,13 +19,15 @@
 <section class="card-container">
 {% for day in days %} 
   <a href="{% url 'days_detail' day.id %}">
-    <div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">{{day.date}}</h5>
-    <h6  class="card-subtitle mb-2 text-muted">{{day.rating}}<span id="outoften">/7</span></h6>
-  </div>
+    <div id="card" class="card-body card" style="width: 18rem;">
+
+      <h5 class="card-title">{{day.date}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted" id="rating">{{day.rating}}<span id="outofseven">/7</span>
+      </h6>
+
+
+    </div>
   </a>
-</div>
 {% endfor %}
 </section>
 {% endblock %}

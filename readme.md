@@ -60,6 +60,7 @@
       <ul>
         <li>more ways to add information about the users day to have a more in depth feel</li>
       </ul>
+    <li> Mobile formatting more user friendly</li>
   </ul>
 
   <br><br>
