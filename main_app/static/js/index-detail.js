@@ -14,4 +14,4 @@ function ratingBackgroundColor() {
   }
 } return cards[i]
 }
-ratingBackgroundColor()
+ratingBackgroundColor() 

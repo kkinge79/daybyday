@@ -25,15 +25,21 @@
 <h3>New Day</h3>
 <img src="../daybyday/main_app/static/images/new.png">
 <br>
-<h3>All Days</h3>
+<!-- <h3>All Days</h3>
 <img src="../daybyday/main_app/static/images/alldays.png">
-<br>
+<br> -->
 <h3>WireFrame</h3>
 <img src="../daybyday/main_app/static/images/wireframe.png">
 <br>
 <h3>ERD</h3>
 <img src="../daybyday/main_app/static/images/erd.png">
 
+<br><br>
+
+<h1>Planning</h1>
+<a href="https://whimsical.com/unit2-project-Ft5j77HuKDDASWJC1sCcft">Wireframe</a>
+<br>
+<a href="https://trello.com/b/HUeNoZN0/daybyday">Trello Board</a>
 
 <br><br>
 
