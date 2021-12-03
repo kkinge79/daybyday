@@ -14,28 +14,8 @@
 
 
 <h1>Screenshots, wireframe, and ERD</h1>
-<h3>Signup</h3>
-
-<br>
-<h3>Login</h3>
-
-<br>
-<h3>About</h3>
-
-<br>
-<h3>New Day</h3>
-
-<br>
-<h3>All Days</h3>
-
-<br> 
-<h3>WireFrame</h3>
-
-<br>
-<h3>ERD</h3>
 
 
-<br><br>
 
 <h1>Planning</h1>
 <a href="https://whimsical.com/unit2-project-Ft5j77HuKDDASWJC1sCcft">Wireframe</a>
