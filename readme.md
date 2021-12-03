@@ -15,25 +15,25 @@
 
 <h1>Screenshots, wireframe, and ERD</h1>
 <h3>Signup</h3>
-<img src="main_app/static/images/signup.png" width='425'>
+
 <br>
 <h3>Login</h3>
-<img src="../daybyday/main_app/static/images/login.png">
+
 <br>
 <h3>About</h3>
-<img src="../daybyday/main_app/static/images/about.png">
+
 <br>
 <h3>New Day</h3>
-<img src="../daybyday/main_app/static/images/new.png">
+
 <br>
-<!-- <h3>All Days</h3>
-<img src="../daybyday/main_app/static/images/alldays.png">
-<br> -->
+<h3>All Days</h3>
+
+<br> 
 <h3>WireFrame</h3>
-<img src="../daybyday/main_app/static/images/wireframe.png">
+
 <br>
 <h3>ERD</h3>
-<img src="../daybyday/main_app/static/images/erd.png">
+
 
 <br><br>
 
