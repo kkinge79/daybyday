@@ -13,13 +13,6 @@
 <br><br>
 
 <h1>Screenshots, wireframe, and ERD</h1>
-![Screen Shot 2021-11-28 at 8 10 31 PM](https://user-images.githubusercontent.com/30996567/144533433-e657cb28-4ade-4552-a497-616f2f4c7cbe.png)
-![Screen Shot 2021-11-28 at 8 10 41 PM](https://user-images.githubusercontent.com/30996567/144533434-18ebf5a5-3517-432b-a83a-389939b996ea.png)
-![Screen Shot 2021-11-28 at 8 10 54 PM](https://user-images.githubusercontent.com/30996567/144533436-035e3740-e6fd-4087-80dc-9cc5ab76e93e.png)
-![Screen Shot 2021-11-28 at 8 11 01 PM](https://user-images.githubusercontent.com/30996567/144533438-87807d2b-c7e4-4b22-b32a-4449f05438b8.png)
-![Screen Shot 2021-11-28 at 8 17 13 PM](https://user-images.githubusercontent.com/30996567/144533440-0fe3b743-73a8-47bb-b44d-3ee6afb9f09b.png)
-![Screen Shot 2021-11-28 at 8 17 31 PM](https://user-images.githubusercontent.com/30996567/144533441-729c171f-da99-490f-9526-dd153f918bf3.png)
-<img width="1406" alt="Screen Shot 2021-11-29 at 10 21 02 PM" src="https://user-images.githubusercontent.com/30996567/144533442-103c23d8-426a-4be2-a64a-5ae29bd5cee7.png">
 
 
 <h1>Planning</h1>
