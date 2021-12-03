@@ -14,7 +14,13 @@
 
 
 <h1>Screenshots, wireframe, and ERD</h1>
-
+<img src="main_app/static/images/about.png" width='425'/>
+<img src="main_app/static/images/signup.png" width='425'/> 
+<img src="main_app/static/images/login.png" width='425'/> 
+<img src="main_app/static/images/new.png" width='425'/> 
+<img src="main_app/static/images/alldays.png" width='425'/> 
+<img src="main_app/static/images/wireframe.png" width='425'/> 
+<img src="main_app/static/images/erd.png" width='425'/> 
 
 
 <h1>Planning</h1>
