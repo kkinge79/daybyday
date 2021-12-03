@@ -12,7 +12,6 @@
 
 <br><br>
 
-<img src="main_app/static/images/Homepage.png" width='425'/> &nbsp; &nbsp; <img src="main_app/static/images/signup.png" width='425'/>
 
 <h1>Screenshots, wireframe, and ERD</h1>
 <h3>Signup</h3>
