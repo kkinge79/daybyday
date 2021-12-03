@@ -12,9 +12,11 @@
 
 <br><br>
 
+<img src="main_app/static/images/Homepage.png" width='425'/> &nbsp; &nbsp; <img src="main_app/static/images/signup.png" width='425'/>
+
 <h1>Screenshots, wireframe, and ERD</h1>
 <h3>Signup</h3>
-<img src="../daybyday/main_app/static/images/signup.png">
+<img src="main_app/static/images/signup.png" width='425'>
 <br>
 <h3>Login</h3>
 <img src="../daybyday/main_app/static/images/login.png">
