@@ -20,13 +20,14 @@
     {% csrf_token %}
     {{ form.as_p }}
     <input type="hidden" name="next" value="{{ next }}">
-    <button type="submit" class="btn btn-light">Login</button>
+    <button type="submit" class="btn btn-dark">Login</button>
   </form>
-  <form action="{% url 'signup' %}" method="post" class="login">
+  <form action="{% url 'signup' %}" method="post" class="signup">
     {% csrf_token %}
     Don't have an account?
-  <button type="submit" class="signup btn btn-light">Signup</button>
+  <button type="submit" class="signup btn btn-dark">Signup</button>
   </form>
 </section>
 {% endif %}
 {% endblock %}
+ 

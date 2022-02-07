@@ -1,7 +1,7 @@
 body {
   height: 100vh;
-
 }
+
 h1,h2 {
   display: flex;
   justify-content: center;
@@ -13,24 +13,41 @@ font-weight: 900;
 
 h1.title {
   font-size: 60px;
-  padding-top: 15px;
+  margin-top: 5rem;
 }
 
 h2 {
   padding-bottom: 20px;
 }
 
+label {
+  margin-right: 5px;
+}
+
 form.login {
-  margin-top:  5px;
+  width: 22rem;
+  margin: auto;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-
+  border: 2px solid black;
+  border-radius: 2%;
+  
 }
 
-button.btn.btn-light {
-  margin-bottom: 10px;
+form.signup {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+button.btn.btn-dark {
+  margin: 7px;
 }
