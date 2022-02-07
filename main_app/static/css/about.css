@@ -11,11 +11,9 @@ body {
   font-family: 'Work Sans', sans-serif;
   font-weight:bolder;
   font-size: 60px;
+  margin: 2.5rem 0;
 }
 
-#whatis {
-  margin: 15px;
-}
 
 p {
   margin: 15px;
@@ -66,4 +64,15 @@ main {
 
 .follow {
   padding-top: 10px;
+} 
+
+.gif{
+  width: 14rem;
+}
+
+.writing-gif{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 15px;
 }
