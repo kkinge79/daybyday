@@ -7,9 +7,8 @@ th {
 }
 
 #signup {
-  font-size: 40px;
   font-family: 'Work Sans', sans-serif;  font-weight: 900;
-  font-size: 60px;
+  font-size: 3.2rem;
 }
 
 h1 { 
@@ -33,7 +32,7 @@ button.btn.btn-dark {
   justify-content: center;
   align-items: center;
   text-align: left;
-  width: 90%;
+  width: 100%;
 }
 
 .signupform{
@@ -48,7 +47,7 @@ p.red-text {
 }
 
 .gif {
-  width: 16rem;
+  width: 12rem;
 }
 
 .plant-gif{
