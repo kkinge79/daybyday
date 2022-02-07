@@ -39,6 +39,7 @@
   <li>PostgreSQL</li>
   <li>Django</li>
   <li>Bootstrap</li>
+  <li>LottieFiles</li>
 </ul>
   <br><br>
 

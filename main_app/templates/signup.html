@@ -10,12 +10,16 @@
 
 {% block content %}
 
+<div class="plant-gif">
+  <img class="gif" src="/static/images/plants.gif" alt="plants-gif"/>
+  </div>
 <div class="page-header">
   <h1 id="signup">Sign Up</h1>
 </div>
 {% if error_message %}
   <p class="red-text">{{ error_message }}</p>
 {% endif %}
+<div class="signupform">
 <form action="" method="post" class="form-container" autocomplete="off">
   {% csrf_token %}
   <table>
@@ -23,5 +27,6 @@
   </table>
   <button type="submit" class="btn btn-dark">Submit!</button>
 </form>
+</div>
 
 {% endblock %}

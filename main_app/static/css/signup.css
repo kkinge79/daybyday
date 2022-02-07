@@ -10,23 +10,20 @@ th {
   font-size: 40px;
   font-family: 'Work Sans', sans-serif;  font-weight: 900;
   font-size: 60px;
-  margin: 15px;
 }
 
-h1 {
+h1 { 
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
 }
 
 button.btn.btn-dark {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
-  margin-top: 30px;
-  width: 35%
+  margin: 10px 0;
+  width: 10rem;
 }
 
 .form-container {
@@ -36,8 +33,27 @@ button.btn.btn-dark {
   justify-content: center;
   align-items: center;
   text-align: left;
+  width: 90%;
+}
+
+.signupform{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 p.red-text {
   visibility: hidden !important;
+}
+
+.gif {
+  width: 16rem;
+}
+
+.plant-gif{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 15px;
 }
