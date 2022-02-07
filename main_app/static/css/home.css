@@ -12,12 +12,21 @@ font-weight: 900;
 }
 
 h1.title {
-  font-size: 60px;
-  margin-top: 5rem;
+  font-size: 50px;
+  margin-top: 1rem;
 }
 
-h2 {
-  padding-bottom: 20px;
+.gif {
+  width: 20rem;
+  border: 2px solid rgba(31, 128, 39, 0.26);
+  border-radius: 2%;
+}
+
+.watering-gif{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 15px
 }
 
 label {
@@ -34,13 +43,10 @@ form.login {
   align-items: center;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  border: 2px solid black;
-  border-radius: 2%;
   
 }
 
 form.signup {
-  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
