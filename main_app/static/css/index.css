@@ -1,6 +1,5 @@
 html, body {
   height: 100vh;
-  background-image: url("../images/wallpaper.jpg");
 }
 
 .title {
@@ -10,7 +9,7 @@ html, body {
   text-align: center;
   margin: 20px; 
   font-size: 35px;
-  font-family: 'Cedarville Cursive', cursive;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 900;
   font-size: 60px;
 }
@@ -20,7 +19,8 @@ section.card-container {
   flex-flow: row wrap;
   align-items:center;
   justify-content: center;
-  font-family: 'Signika', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+
 }
 
 div.card-body {

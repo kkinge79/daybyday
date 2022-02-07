@@ -1,13 +1,13 @@
 body {
   height: 100vh;
-  background-image: url("../images/wallpaper.jpg");
+
 }
 h1,h2 {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: 'Cedarville Cursive', cursive;
+  font-family: 'Work Sans', sans-serif;
 font-weight: 900;
 }
 
@@ -27,7 +27,8 @@ form.login {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: 'Signika', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+
 }
 
 button.btn.btn-light {

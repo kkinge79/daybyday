@@ -1,13 +1,12 @@
 body {
   height: 100vh;
-  background-image: url("../images/wallpaper.jpg");
 }
 
 .date {
   text-align: center;
   margin: 20px;
   font-size: 50px;
-  font-family: 'Cedarville Cursive', cursive;
+  font-family: 'Work Sans', sans-serif;
   font-size: 60px;
   font-weight: 900;
 }

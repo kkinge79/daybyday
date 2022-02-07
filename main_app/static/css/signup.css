@@ -1,6 +1,5 @@
 body {
   height: 100vh;
-  background-image: url("../images/wallpaper.jpg");
 }
 
 th {
@@ -9,8 +8,7 @@ th {
 
 #signup {
   font-size: 40px;
-  font-family: 'Cedarville Cursive', cursive;
-  font-weight: 900;
+  font-family: 'Work Sans', sans-serif;  font-weight: 900;
   font-size: 60px;
   margin: 15px;
 }
