@@ -10,14 +10,16 @@ body {
   align-items: center;
   font-family: 'Work Sans', sans-serif;
   font-weight:bolder;
-  font-size: 60px;
-  margin: 2.5rem 0;
+  font-size: 3.2rem;
+  margin: 2rem 0 1rem 0;
 }
 
 
 p {
-  margin: 15px;
+margin: 0 15px;
   font-family: 'Montserrat', sans-serif;
+  width: auto;
+  font-size: 1rem;
 }
 
 .fa {
@@ -62,10 +64,6 @@ main {
   color: white;
 }
 
-.follow {
-  padding-top: 10px;
-} 
-
 .gif{
   width: 14rem;
 }
@@ -74,5 +72,4 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 15px;
 }
