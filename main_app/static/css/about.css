@@ -6,12 +6,10 @@ body {
 #whatis {
   display: flex;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   align-items: center;
   font-family: 'Work Sans', sans-serif;
-  font-weight:bolder;
   font-size: 3.2rem;
-  margin: 2rem 0 1rem 0;
 }
 
 

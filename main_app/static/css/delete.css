@@ -8,6 +8,10 @@ h1.title {
 
 body {
   height: 100vh;
+  background-image: url("/static/images/clouds.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 h2 {

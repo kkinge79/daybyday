@@ -15,14 +15,26 @@
 
 {% block content %}
 <div class="content">
-<section class="day-container">
+<section>
     <div class="day-actions">
+    <div class="detail-break">
     <p><span class="item" id="theDate">{{day.date}}</span></p>
+    </div>
+    <div class="detail-break">
     <p>Rating: <span class="item">{{day.rating}}</span></p>
+    </div>
+    <div class="detail-break">
     <p>Mood for the day: <span class="item">{{ day.mood }}</span></p>
+    </div>
+    <div class="detail-break">
     <p>Highs: <span class="item">{{day.highs }}</span></p>
+    </div>
+    <div class="detail-break">
     <p>Lows: <span class="item">{{day.lows }}</span></p>
+    </div>
+    <div class="detail-break">
     <p>Any notes to add: <span class="item">{{ day.notes }}</span></p>
+    </div>
     </div>
   </section>
   <div class="button">

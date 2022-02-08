@@ -17,29 +17,25 @@ body {
   font-weight: 900;
   font-size: 60px;
 }
- 
+
 section.card-container {
   display: flex;
   flex-flow: row wrap;
   align-items:center;
   justify-content: center;
   font-family: 'Montserrat', sans-serif;
-
 }
 
 div.card-body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
- 
 }
 
 h6.card-subtitle.mb-2.text-muted {
   font-size: 32px;
   margin: auto;
   color: black;
-
 }
 h6#rating.card-subtitle.mb-2.text-muted {
   color: black !important;
@@ -63,7 +59,6 @@ div.card-body {
   font-size: 24px;
   margin: auto;
   color: black;
-  
 }
 
 #outofseven {
