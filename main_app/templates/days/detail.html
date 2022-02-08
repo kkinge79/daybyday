@@ -16,18 +16,18 @@
 {% block content %}
 <div class="content">
 <section class="day-container">
-  <div class="day-details">
+    <div class="day-actions">
     <p><span class="item" id="theDate">{{day.date}}</span></p>
     <p>Rating: <span class="item">{{day.rating}}</span></p>
     <p>Mood for the day: <span class="item">{{ day.mood }}</span></p>
     <p>Highs: <span class="item">{{day.highs }}</span></p>
     <p>Lows: <span class="item">{{day.lows }}</span></p>
     <p>Any notes to add: <span class="item">{{ day.notes }}</span></p>
-    <div class="day-actions">
     </div>
   </section>
+  <div class="button">
   <a href="{% url 'days_delete' day.id %}" class="btn btn-dark">Delete</a>
-</div>
+  </div>
 </div>
 
 {% endblock %}

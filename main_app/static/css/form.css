@@ -40,6 +40,7 @@ label {
   margin: 10px;
   border: 1px solid black;
   border-radius: 6px;
+  width: 50px;
 }
 #id_mood {
   margin: 10px;

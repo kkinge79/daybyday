@@ -1,126 +1,35 @@
 body {
   height: 100vh;
+  background-image: url("/static/images/clouds.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.date {
-  text-align: center;
-  margin: 20px;
-  font-size: 50px;
-  font-family: 'Work Sans', sans-serif;
-  font-size: 60px;
-  font-weight: 900;
-}
-
-.content {
-  font-family: 'Signika', sans-serif;
-  margin: auto;
-}
-
-section.day-container {
+.day-actions{
   display: flex;
-  flex-wrap: wrap;
-  align-items: left;
+  flex-direction: column;
+  justify-content:center;
+  align-items: flex-start;
   text-align: left;
-  margin: auto;
-}
-
-div.day-details {
-  margin-top: 40px;
-  text-align: left;
-  word-break:break-all;
-  margin: 0px !important;
-  padding-left: 10px;
-}
-
-section.Date {
-  text-align: left;
-}
-
-a.btn.btn-dark {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 40px;
-  margin: auto;
-  width: 120px;
-}
-
-div.day-actions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  margin: 3rem;
 }
 
 p{
-  font-size: 32px;
-  color: white;
+  font-size: 2rem;
 }
 
-button.btn.btn-light.submit {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: auto;
-}
-
-form.subsection-content {
-  margin-bottom: 25px;
-}
-
-.datemood {
-  font-size: 24px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
-  justify-content: space-between;
-}
-
-table {
-  text-align: center;
-  
-}
-
-td, th {
-  padding: 0 50px;
-}
-
-th {
-  color: white;
-}
-
-td.datepost {
-  font-size: 26px;
-}
-
-td.emoji {
-  font-size: 26px;
-}
-
-.item {
-  font-size: 23px;
-  color: black;
+.item{
+  font-size: 1.3rem;
 }
 
 #theDate{
-  font-size:55px !important ;
+  font-size: 3.5rem;
+  
 }
 
-
-@media only screen and(max-width: 375px){
-
-button.btn.btn-light.submit {
-  margin: 0;
-}
-
-section.day-details {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.button {
+  text-align: center;
   align-items: center;
-  text-align: left;
 }
-}
+
