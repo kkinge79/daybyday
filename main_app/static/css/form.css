@@ -1,10 +1,16 @@
 
+body {
+  background-image: url("/static/images/clouds.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 h1#add {
 text-align: center;
 margin: 15px;
 font-family: 'Work Sans', sans-serif;
-font-size: 60px;
+font-size: 3.4rem;
 font-weight: 900;
 }
 
@@ -15,8 +21,10 @@ form.form-container {
   align-items: center;
   text-align: left;
   font-family: 'Montserrat', sans-serif;
+}
 
-
+.page-header{
+  margin-top: 5rem;
 }
 
 label {
@@ -25,20 +33,32 @@ label {
 
 #id_date{
   margin: 10px;
+  border: 1px solid black;
+  border-radius: 6px;
 }
 #id_rating{
   margin: 10px;
+  border: 1px solid black;
+  border-radius: 6px;
 }
 #id_mood {
   margin: 10px;
+  border: 1px solid black;
+  border-radius: 6px;
 }
 #id_highs {
   margin: 10px;
+  border: 1px solid black;
+  border-radius: 6px;
 }
 #id_lows {
   margin: 10px;
+  border: 1px solid black;
+  border-radius: 6px;
 }
 #id_notes {
+  border: 1px solid black;
+  border-radius: 6px;
   margin: 10px;
   width: 275px;
 }
@@ -46,7 +66,7 @@ label {
   margin: 10px;
 }
 
-button.btn.btn-light.submit {
+button.btn.btn-dark.submit {
   margin-top: 10px;
   display: flex;
   justify-content: center;
